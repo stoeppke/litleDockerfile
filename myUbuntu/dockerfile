@@ -1,0 +1,9 @@
+FROM ubuntu
+
+RUN apt update -q
+RUN apt install -yq fish vim git wget curl
+RUN chsh -s /usr/bin/fish
+# RUN yes | curl -L https://get.oh-my.fish | fish
+
+
+CMD [ "/usr/bin/fish" ]
